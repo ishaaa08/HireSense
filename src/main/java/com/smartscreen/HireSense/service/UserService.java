@@ -1,28 +1,16 @@
 package com.smartscreen.HireSense.service;
 
 
-import com.smartscreen.HireSense.exception.DataValidationException;
 import com.smartscreen.HireSense.exception.InvalidPassword;
 import com.smartscreen.HireSense.exception.UserAlreadyExists;
 import com.smartscreen.HireSense.exception.UserNotFound;
 import com.smartscreen.HireSense.model.LoginRequest;
 import com.smartscreen.HireSense.model.RegisterRequest;
-import com.smartscreen.HireSense.entity.ResumeEntity;
 import com.smartscreen.HireSense.entity.UserEntity;
 import com.smartscreen.HireSense.repository.ResumeDao;
 import com.smartscreen.HireSense.repository.UserDao;
 import lombok.RequiredArgsConstructor;
-import org.apache.tika.Tika;
-import org.apache.tika.exception.TikaException;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.time.LocalDateTime;
-import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor

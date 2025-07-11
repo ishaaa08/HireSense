@@ -1,16 +1,11 @@
 package com.smartscreen.HireSense.controller;
 
-import com.drew.lang.annotations.NotNull;
 import com.smartscreen.HireSense.model.LoginRequest;
 import com.smartscreen.HireSense.model.RegisterRequest;
 import com.smartscreen.HireSense.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.apache.tika.exception.TikaException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
-import java.io.IOException;
 
 @RestController
 @RequestMapping("/HireSense")
